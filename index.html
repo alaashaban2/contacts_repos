@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Numbers Note</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html#">My Contacts</a>
+    </nav>
+    <!--end navbar-->
+
+    <!--start container-->
+      <div class="container-fluid">
+
+        <!-- Example row of columns -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 add">
+             <h3>ADD NEW CONTACT</h3>
+             <div class="alert alert-danger d-none"></div>
+            <form id="add">
+                <div class="form-group">
+                  <label for="Person Name"></label>Person Name</label>
+                  <input type="text" class="form-control" id="person_name"  placeholder="Person Name">
+                </div>
+                <div class="form-group">
+                  <label for="Person Number">Person Number</label>
+                  <input type="text" class="form-control" id="person_number" placeholder="Person Number">
+                </div>
+                
+                <div class="form-group">
+                <button type="submit" class="form-control btn btn-success">SAVE</button>
+            </div>
+              </form>
+          </div>
+         
+        </div>
+</div>
+<div class="container-fluid">
+       <div class="row justify-content-center">
+           <div class="col-md-10">
+            <table class="table table-bordered">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Person Name</th>
+                    <th scope="col">Person Number</th>
+                    
+                    <th scope="col"><input type="checkbox" id="check-all" > <button onclick="deleteChecked()" class="btn btn-danger"> 
+                      Delete All</button></th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                 
+                </tbody>
+              </table>
+              
+           
+           </div>
+       </div>
+
+      </div>
+       <!--end container -->
+
+   
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
